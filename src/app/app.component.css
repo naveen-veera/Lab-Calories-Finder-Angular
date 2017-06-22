@@ -1,0 +1,11 @@
+* {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  padding: 25px 25px;
+}
+
+.food-container {
+  width: 100%;
+}
