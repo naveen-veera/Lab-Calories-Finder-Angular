@@ -14,7 +14,7 @@ export class FoodListComponent implements OnInit {
   isEditing      : boolean = false;
   newFoodName    : string = "Example Name";
   newFoodCalories: number = 250;
-  newFoodImage   : string = "http://dhiglobal.com/wp-content/uploads/2016/07/placeholder.jpg";
+  newFoodImage   : string = "https://imagefinder.co/storage/w1000/images/2019/02/freestocks_sandwich_3-1000x667.jpg";
   quantity       : number;
   totalCalories  : number = 0;
 

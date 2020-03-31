@@ -9,16 +9,20 @@
     <br>
     <div *ngIf="isEditing">
       <div>
+        <br>
         <label for="new-food-name">Name</label>
         <input type="text" [(ngModel)]="newFoodName">
+        <br> <br>
       </div>
       <div>
         <label for="new-food-calories">Calories</label>
         <input type="text" [(ngModel)]="newFoodCalories">
+        <br> <br>
       </div>
       <div>
         <label for="new-food-name">Image</label>
         <input type="text" [(ngModel)]="newFoodImage">
+        <br> <br>
       </div>
 
       <button (click)="newFood()">Add Food</button>
@@ -37,7 +41,6 @@
 
 
     <li class="single-food" *ngFor="let food of foods | foodSearch:'name':pattern;">
-
       <img [src]="food.image">
       <!--   could do this either way below evaluates once, above listens for changes-->
       <!-- <img src="{{food.image}}"> -->
@@ -45,8 +48,8 @@
         {{ food.name }}
         <small class="food-calories">{{ food.calories }}</small>
       </h3>
-      <button (click)="addToMyList(food, quantity)">+</button>
       <input type="text" #quantity value="1">
+      <button (click)="addToMyList(food, quantity)"> Add </button>
     </li>
   </ul>
 
